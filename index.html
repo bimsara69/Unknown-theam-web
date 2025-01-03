@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unknown Team Store</title>
+    <title>Login and Register</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Unknown Team Store</h1>
-        <nav>
-            <a href="#products">Products</a>
-            <a href="#login">Login</a>
-        </nav>
-    </header>
-    <main>
-        <section id="products">
-            <h2>Our Products</h2>
-            <div id="product-list">
-                <!-- Product items will go here -->
-            </div>
-        </section>
-        <section id="login">
+    <div class="container">
+        <!-- Register Form -->
+        <div id="register-panel">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" required>
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-panel">
             <h2>Login</h2>
             <form id="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
                 <button type="submit">Login</button>
             </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Unknown Team. All rights reserved.</p>
-    </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-                              </html>
-                              
+</html>
